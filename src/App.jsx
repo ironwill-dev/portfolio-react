@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { ThemeProvider } from "styled-components"
-import GlobalStyle from "./styles/globalStyle"
+import GlobalStyle from "./styles/GlobalStyle"
 import theme from "./styles/theme"
 import HeroSection from "./components/HeroSection"
 import Section from "./components/Section"
