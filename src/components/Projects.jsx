@@ -51,30 +51,30 @@ const Span = styled.span`
   -webkit-text-fill-color: transparent;
 `;
 
-const Projects = () => {
+const Projects = ({ func1, func2}) => {
   return (
     <>
         <h2><Span>My Projects</Span></h2>
         <ProjectGrid>
-            <ProjectCard>
+            <ProjectCard onMouseEnter={func1} data-testid='project-c1'>
                 <ProjectImage src='/proj1.png' alt='Project 1' />
                 <ProjectTitle>Full-Stack Task Manager Application</ProjectTitle>
                 <ProjectDescription>HTML, CSS, JS, React, Express.js, Node.js, MongoDB</ProjectDescription>
             </ProjectCard>
 
-            <ProjectCard>
+            <ProjectCard onMouseEnter={func2} data-testid='project-c2'>
                 <ProjectImage src='/proj2.png' alt='Project 2' />
                 <ProjectTitle>Front-End Random Quote Generator</ProjectTitle>
                 <ProjectDescription>HTML, CSS, JS, React, API, Axios, Media-CSS</ProjectDescription>
             </ProjectCard>
 
-            <ProjectCard>
+            <ProjectCard data-testid='project-c3'>
                 <ProjectImage src='/proj3.png' alt='Project 3' />
                 <ProjectTitle>Front-End Financial Revenue Dashboard</ProjectTitle>
                 <ProjectDescription>HTML, CSS, JS, React, Recharts, Cypress, E2E</ProjectDescription>
             </ProjectCard>
 
-            <ProjectCard>
+            <ProjectCard data-testid='project-c4'>
                 <ProjectImage src='/proj4.png' alt='Project 4' />
                 <ProjectTitle>Front-End Calculator Web Application</ProjectTitle>
                 <ProjectDescription>HTML, CSS, JS, Calculate(), Try/Catch</ProjectDescription>

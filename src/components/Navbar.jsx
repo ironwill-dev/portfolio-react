@@ -97,12 +97,12 @@ const Navbar = () => {
             <NavLink onClick={() => scrollToSection('contact')}>Contact</NavLink>
         </NavLinks>
 
-        <Hamburger onClick={toggleMenu}>
-            {openMenu ? <FaTimes /> : <FaBars />}
+        <Hamburger data-testid='hamburger-button' onClick={toggleMenu}>
+            {openMenu ? <FaTimes data-testid='times-icon' /> : <FaBars data-testid='bars-icon' />}
         </Hamburger>
 
         {openMenu && (
-            <MobileMenu>
+            <MobileMenu data-testid='mobile-menu'>
                 <NavLink onClick={() => scrollToSection('hero')}>Hero</NavLink>
                 <NavLink onClick={() => scrollToSection('projects')}>Projects</NavLink>
                 <NavLink onClick={() => scrollToSection('about')}>About</NavLink>

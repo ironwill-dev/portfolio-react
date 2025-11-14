@@ -84,8 +84,8 @@ ContactForm.text.jsx >>>
 ...
 
 E2E Cypress Test
-
-npx cypress open ORRRRR npx cypress run
+npm install --save-dev cypress
+npx cypress open
 
 cypress/e2e/contactForm.cy.js >>>
     describe("E2E Test", () => {
@@ -105,6 +105,11 @@ cypress/e2e/contactForm.cy.js >>>
     });
 });
 
+npx cypress run
+
+...
+
+npx vitest run src/tests/Navbar.test.jsx
 
 ...
 
